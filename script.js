@@ -115,7 +115,7 @@ checkbox.addEventListener('change', function() {
 
 const fetchData = async () => {
     try {
-        const response = await fetch('http://localhost:3000/api/cryptos');
+        const response = await fetch('https://backendassignment-demo.onrender.com/api/cryptos');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
