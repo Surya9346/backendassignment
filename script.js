@@ -4,18 +4,26 @@ document.addEventListener("DOMContentLoaded", function() {
     var btcButton = document.getElementById("btcButton");
     var dropdownBTC = document.getElementById("dropdownBTC");
 
-    inrButton.addEventListener("click", function() {
-        dropdownINR.classList.toggle("show");
-        dropdownBTC.classList.remove("show"); // Close BTC dropdown if open
-    });
+    function toggleDropdown(dropdown) {
+        dropdown.classList.toggle("show");
+        if (dropdown === dropdownINR) {
+            dropdownBTC.classList.remove("show"); 
+        } else {
+            dropdownINR.classList.remove("show"); 
+        }
+    }
 
-    btcButton.addEventListener("click", function() {
-        dropdownBTC.classList.toggle("show");
-        dropdownINR.classList.remove("show"); // Close INR dropdown if open
-    });
+    function setupButtonClickHandler(button, dropdown) {
+        button.addEventListener("click", function() {
+            toggleDropdown(dropdown);
+        });
+    }
+
+    setupButtonClickHandler(inrButton, dropdownINR);
+    setupButtonClickHandler(btcButton, dropdownBTC);
 
     window.onclick = function(event) {
-        if (!event.target.matches('.buton')) {
+        if (!event.target.matches('.buton') && !event.target.matches('.btn-light')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             for (var i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
