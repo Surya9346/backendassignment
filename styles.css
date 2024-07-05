@@ -265,6 +265,7 @@ input:checked +.slider:before {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-x: scroll;
     padding: 1%;
 }
 
@@ -337,16 +338,10 @@ hr {
     color: #2e3241;
 }
 
-.bottom-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-width: 100%;
-}
-
 .bottom {
     color: #888686;
     font-size: 1.0em;
+    padding-left: 10px;
 }
 
 /* Fixed Footer Styles */
@@ -381,6 +376,9 @@ hr {
 /* Media Queries */
 
 @media only screen and (max-width: 991px) {
+    body{
+        min-width: 100vw;
+    }
     .box1 {
         flex-direction: column;
         justify-content: center;
@@ -402,11 +400,11 @@ hr {
    .btn-light {
         min-width: 45%;
     }
-    .con{
-        margin: 0;
+   .con{
+    margin: 0;
     }
    .tele{
-        margin-left: 10px;
+    margin-left: 10px;
     }
    .box2 {
         justify-content: space-between;
@@ -431,7 +429,7 @@ hr {
         width: 45%;
         font-size: 1.0em;
     }
-    table{
+    .box3{
         overflow-x: scroll;
     }
     th{
