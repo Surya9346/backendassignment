@@ -145,4 +145,4 @@ const fetchData = async () => {
 };
 
 // Trigger fetchData function on page load or any other event
-setInterval(fetchData(), 60000);
+fetchData();
