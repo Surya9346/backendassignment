@@ -340,12 +340,12 @@ hr {
 
 .bottom-div{
     justify-content: space-between;
+    min-width: 100vw;
 }
 
 .bottom {
     color: #888686;
     font-size: 1.0em;
-    padding-left: 10px;
 }
 
 /* Fixed Footer Styles */
