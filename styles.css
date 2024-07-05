@@ -402,6 +402,12 @@ hr {
    .btn-light {
         min-width: 45%;
     }
+    .con{
+        margin: 0;
+    }
+   .tele{
+        margin-left: 10px;
+    }
    .box2 {
         justify-content: space-between;
         min-width: 100%;
@@ -432,7 +438,8 @@ hr {
         font-size: 0.6em;
     }
     td{
-        font-size: 0.9em;
+        font-size: 0.7em;
+        padding: 5px;
     }
     hr{
         min-width: 100vw;
