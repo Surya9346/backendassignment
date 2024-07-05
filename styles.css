@@ -338,6 +338,10 @@ hr {
     color: #2e3241;
 }
 
+.bottom-div{
+    justify-content: space-between;
+}
+
 .bottom {
     color: #888686;
     font-size: 1.0em;
