@@ -337,6 +337,12 @@ hr {
     color: #2e3241;
 }
 
+.bottom-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .bottom {
     color: #888686;
     font-size: 1.0em;
@@ -427,5 +433,8 @@ hr {
     }
     td{
         font-size: 0.9em;
+    }
+    hr{
+        min-width: 100vw;
     }
 }
