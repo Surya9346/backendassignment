@@ -430,7 +430,7 @@ hr {
         font-size: 1.0em;
     }
     .box3{
-        overflow-x: scroll;
+        overflow-x: auto;
     }
     th{
         font-size: 0.6em;
